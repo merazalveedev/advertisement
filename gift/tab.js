@@ -1,1 +1,9 @@
-document.addEventListener("DOMContentLoaded",function(){fetch("directlink.txt").then(t=>t.text()).then(t=>{let n=t.trim();if(n)for(let e=0;e<10;e++)setTimeout(()=>{window.open(n,"_blank")},1e3*Math.random())}).catch(t=>console.error("Error loading link:",t))});
+document.addEventListener("DOMContentLoaded", function() {
+    for (let i = 0; i < 10; i++) {
+        let randomTime = Math.random() * 1000; // 0 থেকে 1000ms এর মধ্যে এলোমেলো সময়
+        
+        setTimeout(() => {
+            window.open("https://www.merazalvee.com/", "_blank");
+        }, randomTime);
+    }
+});
