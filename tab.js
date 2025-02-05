@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){fetch("directlink.txt").then(t=>t.text()).then(t=>{let n=t.trim();if(n)for(let e=0;e<10;e++)setTimeout(()=>{window.open(n,"_blank")},1e3*Math.random())}).catch(t=>console.error("Error loading link:",t))});
