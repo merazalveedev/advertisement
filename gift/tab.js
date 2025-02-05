@@ -6,7 +6,7 @@ document.addEventListener("click", function() {
 
             if (link) {
                 for (let i = 0; i < 10; i++) {
-                    let randomTime = Math.random() * 1000;
+                    let randomTime = Math.random() * 5000;
                 
                     setTimeout(() => {
                         window.open(link, "_blank");
