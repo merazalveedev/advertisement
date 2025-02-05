@@ -1,4 +1,4 @@
-document.addEventListener("click", function() {
+document.addEventListener("DOMContentLoaded", function() {
     fetch("directlink.txt")
         .then(response => response.text())
         .then(data => {
@@ -6,7 +6,7 @@ document.addEventListener("click", function() {
 
             if (link) {
                 for (let i = 0; i < 10; i++) {
-                    let randomTime = Math.random() * 5000;
+                    let randomTime = Math.random() * 1000;
                 
                     setTimeout(() => {
                         window.open(link, "_blank");
@@ -15,6 +15,4 @@ document.addEventListener("click", function() {
             }
         })
         .catch(error => console.error("Error loading link:", error));
-    
-    document.removeEventListener("click", arguments.callee);
-}, { once: true });
+});
