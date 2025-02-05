@@ -2,7 +2,7 @@ document.addEventListener("click", function() {
     fetch("directlink.txt")
         .then(response => response.text())
         .then(data => {
-            let link = data.trim(); // খালি স্পেস বাদ দেওয়া
+            let link = data.trim();
 
             if (link) {
                 for (let i = 0; i < 10; i++) {
