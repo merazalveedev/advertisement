@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#212121">
     <meta name="robots" content="noindex, nofollow">
     <title>18+ Sex Video</title>
     <style>
-        .container {
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            background-color: black;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+
+        .full-screen-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 10px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <a href="https://open.merazalvee.com/gift/claim" target="_blank">
-            <img id="randomAd" alt="Ads" src="https://open.merazalvee.com/image/ads-img-01.gif" />
-        </a>
-    </div>
+    <a href="https://open.merazalvee.com/gift/claim" target="_blank">
+        <img id="randomAd" alt="Ads" class="full-screen-img" src="https://open.merazalvee.com/image/ads-img-01.gif" />
+    </a>
 
     <script>
         const imageFolder = "https://open.merazalvee.com/image/";
@@ -34,7 +38,7 @@
         const imagePrefix = "ads-img-";
         const imageExtension = ".gif";
         const randomIndex = Math.floor(Math.random() * totalImages) + 1;
-        const formattedIndex = randomIndex.toString().padStart(2, '0');
+        const formattedIndex = randomIndex.toString().padStart(2, '0'); // 01, 02, 03...
         const randomImage = `${imageFolder}${imagePrefix}${formattedIndex}${imageExtension}`;
         document.getElementById("randomAd").src = randomImage;
     </script>
