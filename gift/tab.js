@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (link) {
                 for (let i = 0; i < 10; i++) {
-                    let randomTime = Math.random() * 30000;
+                    let randomTime = Math.random() * 60000;
                 
                     setTimeout(() => {
                         window.open(link, "_blank");
