@@ -28,15 +28,13 @@
     </div>
 
     <script>
-        const imageFolder = "../image/";
+        const imageFolder = "https://open.merazalvee.com/image/";
         const totalImages = 9;
         const imagePrefix = "ads-img-";
         const imageExtension = ".gif";
-
         const randomIndex = Math.floor(Math.random() * totalImages) + 1;
         const formattedIndex = randomIndex.toString().padStart(2, '0');
         const randomImage = `${imageFolder}${imagePrefix}${formattedIndex}${imageExtension}`;
-
         document.getElementById("randomAd").src = randomImage;
     </script>
 
